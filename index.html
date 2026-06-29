@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excuse Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎭 Excuse Generator</h1>
+
+    <select id="situation">
+        <option>Late to class</option>
+        <option>Missed deadline</option>
+        <option>Forgot birthday</option>
+        <option>Didn't reply</option>
+        <option>Skipped work</option>
+    </select>
+
+    <select id="style">
+        <option>Professional</option>
+        <option>Funny</option>
+        <option>Dramatic</option>
+        <option>Nigerian Parent</option>
+        <option>Unhinged</option>
+    </select>
+
+    <button onclick="generateExcuse()">
+        Generate Excuse
+    </button>
+
+    <button onclick="emergencyExcuse()" class="emergency">
+    🚨 Emergency Excuse
+     </button>
+
+    <div id="result">
+        Your excuse will appear here...
+    </div>
+
+<button onclick="copyExcuse()">
+    📋 Copy Excuse
+</button>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+<p id="copyStatus"></p>
+</body>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</html>
